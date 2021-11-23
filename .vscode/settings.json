@@ -1,0 +1,15 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "files.exclude": {
+    "**/.next": true,
+    "**/.vercel": true,
+    "**/tsconfig.tsbuildinfo": true,
+    "**/node_modules": true
+  }
+}

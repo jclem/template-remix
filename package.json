@@ -1,0 +1,46 @@
+{
+  "name": "@jclem/template-remix",
+  "description": "Template for Remix applications",
+  "dependencies": {
+    "@remix-run/react": "^1.0.4",
+    "@remix-run/serve": "^1.0.4",
+    "react": "^18.0.0-beta-149b420f6-20211119",
+    "react-dom": "^18.0.0-beta-149b420f6-20211119",
+    "remix": "^1.0.4"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.0.4",
+    "@types/react": "^17.0.36",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.2"
+  },
+  "engines": {
+    "node": ">= 14.x <= 16.x",
+    "npm": ">= 7.x <= 8.x"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev",
+    "postinstall": "remix setup node",
+    "start": "remix-serve build",
+    "check": "run-p --aggregate-output --continue-on-error check:*",
+    "check:build": "tsc",
+    "check:format": "prettier --check .",
+    "check:lint": "eslint .",
+    "fix": "run-s fix:*",
+    "fix:format": "prettier --loglevel warn --write .",
+    "fix:lint": "eslint . --fix"
+  },
+  "sideEffects": false
+}
