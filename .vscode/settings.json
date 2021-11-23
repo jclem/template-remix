@@ -7,9 +7,9 @@
     "*.css": "postcss"
   },
   "files.exclude": {
-    "**/.next": true,
-    "**/.vercel": true,
-    "**/tsconfig.tsbuildinfo": true,
-    "**/node_modules": true
+    ".cache": true,
+    "build": true,
+    "node_modules": true,
+    "public/build": true
   }
 }
